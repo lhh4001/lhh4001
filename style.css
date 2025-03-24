@@ -1,42 +1,164 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    }
-    /* Header and Navigation Bar */
-    header {
-    background-color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #c12c88;
     color: white;
-    padding: 15px;
+    padding: 20px 0;
     text-align: center;
-    }
-    nav ul {
-    list-style-type: none;
-    padding: 0;
-    }
-    nav ul li {
-    display: inline;
-    margin: 10px;
-    }
-    nav ul li a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation menu styling */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    }
-    /* Main Content */
-    section {
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a822a2;
+}
+
+/* Main content styling */
+main {
     padding: 20px;
-    text-align: center;
-    }
-    /* Footer */
-    footer {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a51b5d;
+    padding-bottom: 10px;
+    color: #8f1351;
+}
+
+main .drama {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+main .drama img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main .drama .details {
+    flex: 1;
+}
+
+main .drama .details h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main .drama .details p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* Center text and image */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5b0555;
+    padding-bottom: 10px;
+    color: #5b0555;
+}
+
+section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Centered image */
+section img {
+    display: block;
+    margin: 20px auto; /* Center image */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* App section styling */
+.app {
+    margin-bottom: 20px;
+}
+
+.app h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.app p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
     background-color: #333;
-    color: white;
+    color: rgb(176, 168, 173);
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    }
-    
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
